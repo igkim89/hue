@@ -165,6 +165,10 @@ Just pull the latest from the Internet or build it yourself from the Hue reposit
 Directly from Github source:
 
     docker build https://github.com/cloudera/hue.git#master -t hue -f tools/docker/hue/Dockerfile
+    
+Or from a cloned local Hue:
+
+    docker build . -t gethue/hue -f tools/docker/hue/Dockerfile
 
 Or from a cloned local Hue (MacOS):
 
