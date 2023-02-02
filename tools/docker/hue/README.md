@@ -170,7 +170,7 @@ Or from a cloned local Hue:
 
     docker build . -t gethue/hue -f tools/docker/hue/Dockerfile
 
-Or from a cloned local Hue (MacOS):
+Or from a cloned local Hue (on MacOS):
 
     docker build . --platform amd64 -t gethue/hue -f tools/docker/hue/Dockerfile
 
