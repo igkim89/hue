@@ -166,9 +166,9 @@ Directly from Github source:
 
     docker build https://github.com/cloudera/hue.git#master -t hue -f tools/docker/hue/Dockerfile
 
-Or from a cloned local Hue:
+Or from a cloned local Hue (MacOS):
 
-    docker build . -t gethue/hue -f tools/docker/hue/Dockerfile
+    docker build . --platform amd64 -t gethue/hue -f tools/docker/hue/Dockerfile
 
 **Note**
 
