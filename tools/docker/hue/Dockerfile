@@ -3,6 +3,9 @@
 FROM ubuntu:18.04
 LABEL description="Hue SQL Assistant - gethue.com"
 
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/Seoul
+
 RUN apt-get update -y && apt-get install -y \
   python3-pip \
   libkrb5-dev  \
@@ -18,7 +21,8 @@ RUN apt-get update -y && apt-get install -y \
   rsync \
   curl \
   sudo \
-  git && \
+  git \
+  tzdata && \
   rm -rf /var/lib/apt/lists/*
 
 ADD . /hue
